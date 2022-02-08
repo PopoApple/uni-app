@@ -8,16 +8,47 @@
 	},
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
-			"path": "pages/index/index",
+			"path": "pages/IndexPage/WorkBench",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "工作台"
+			}
+		},
+		{
+			"path": "pages/IndexPage/Approve",
+			"style": {
+				"navigationBarTitleText": "审批申请"
+			}
+		},
+		{
+			"path": "pages/Hr/Staff/index",
+			"style": {
+				"navigationBarTitleText": "员工管理"
 			}
 		}
 	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
+		"navigationBarTitleText": "内部管理系统"
+	},
+	"tabBar": {
+		"color": "#333",
+		"selectedColor": "#007aff",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"height": "50px",
+		"fontSize": "10px",
+		"iconWidth": "24px",
+		"spacing": "3px",
+		"list": [{
+				"pagePath": "pages/IndexPage/WorkBench",
+				"iconPath": "static/image/workbench.png",
+				"selectedIconPath": "static/image/workbench_active.png",
+				"text": "工作台"
+		}, {
+				"pagePath": "pages/IndexPage/Approve",
+				"iconPath": "static/image/approve.png",
+				"selectedIconPath": "static/image/approve_active.png",
+				"text": "审批"
+		}]
 	}
 }

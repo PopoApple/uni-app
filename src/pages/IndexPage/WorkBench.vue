@@ -1,8 +1,13 @@
 <template>
 	<view class="content">
-		<image class="logo" src="/static/logo.png"></image>
+		<!-- <image class="logo" src="/static/logo.png"></image> -->
 		<view>
 			<text class="title">{{title}}</text>
+		</view>
+		<view>
+			<navigator url="/pages/Hr/Staff/index" hover-class="navigator-hover">
+				<button type="default">员工管理</button>
+			</navigator>
 		</view>
 	</view>
 </template>
@@ -11,7 +16,7 @@
 	export default {
 		data() {
 			return {
-				title: 'Hello'
+				title: '工作台'
 			}
 		},
 		onLoad() {
